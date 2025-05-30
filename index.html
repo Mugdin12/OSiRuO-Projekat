@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="ba">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,29 +9,54 @@
       font-family: Arial, sans-serif;
       background-color: #f0f4f8;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
     }
     h1 {
       color: #333;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #555;
     }
     a.button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #007BFF;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       margin-top: 20px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
     a.button:hover {
       background-color: #0056b3;
     }
+    footer {
+      background-color: #e0e0e0;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
   </style>
 </head>
 <body>
-  <h1>Dobrodošli na našu početnu stranicu</h1>
-  <p>Za više informacija posjetite našu stranicu s dokumentacijom.</p>
-  <a class="button" href="dokumentacija.html">Idi na dokumentaciju</a>
+  <main>
+    <h1>Dobrodošli na OSiRuO</h1>
+    <p>Za uređivanje slike kliknite na gumb ispod.</p>
+    <a class="button" href="https://osiruoeditor.databutton.app/osiruo-editor" aria-label="Uredi sliku na OSiRuO editoru">Uređivanje slike</a>
+  </main>
+  <footer>
+    © 2025 OSiRuO-Editor. Sva prava pridržana.
+  </footer>
 </body>
 </html>
